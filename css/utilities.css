@@ -44,6 +44,10 @@
 }
 
 /* Flex Columns */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
 .flex-columns .row {
   display: flex;
   flex-direction: row;
@@ -93,4 +97,17 @@
 .btn-outline {
   background: transparent;
   border: 1px solid #fff;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
